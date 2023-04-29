@@ -1,8 +1,9 @@
 import { useGetChatResponse } from "../utils/api";
 
 export default function Home() {
-  const { data, error, isLoading } = useGetChatResponse();
+  //const { data, error, isLoading } = useGetChatResponse();
 
+  /*
   if (isLoading) {
     return <></>;
   } else if (error) {
@@ -14,4 +15,6 @@ export default function Home() {
       </main>
     );
   }
+  */
+  return <div>Hello world</div>;
 }
