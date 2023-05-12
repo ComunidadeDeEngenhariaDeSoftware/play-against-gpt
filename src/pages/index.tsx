@@ -1,9 +1,13 @@
+
 import Header from "../components/Header/header";
 import GamesGrid from "../components/Home/games-grid";
-import TicTacToeScreen from "./tic-tac-toe-screen";
 import Link from "next/link";
+import { useGetChatResponse } from "../utils/api";
+
 
 export default function Home() {
+  //const { data, error, isLoading } = useGetChatResponse();
+  
   return (
     <div>
       <div className="w-screen flex flex-col h-screen bg-slate-500">
