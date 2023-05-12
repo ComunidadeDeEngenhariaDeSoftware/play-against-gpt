@@ -1,6 +1,9 @@
 import { useState } from "react";
-import TicTacToe from "../components/tic-tac-toe";
-import AgainButton from "./again-button";
+import TicTacToe from "../components/TicTacToe/tic-tac-toe";
+import AgainButton from "../components/TicTacToe/again-button";
+import Title from "../components/title";
+import GameName from "../components/game-name";
+import Header from "../components/Header/header";
 
 function TicTacToeScreen() {
   let showAgainButton = false;
@@ -64,10 +67,11 @@ function TicTacToeScreen() {
   }
 
   return (
-    <div className="w-screen flex justify-center h-screen bg-slate-500">
+    <div className="w-screen flex flex-col  h-screen bg-slate-500">     
+      <Header></Header>
       <div className="flex flex-col">
-        <h1 className="text-7xl mt-4 flex justify-center">PLAY AGAINST GPT</h1>
-        <h2 className="text-4xl mt-4 flex justify-center">TIC TAC TOE</h2>
+        <Title></Title>
+        <GameName gameName={"TIC TAC TOE"}></GameName>
         <TicTacToe
           status={status}
           squares={squares}

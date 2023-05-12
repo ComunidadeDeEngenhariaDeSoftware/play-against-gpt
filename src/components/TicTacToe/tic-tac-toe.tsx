@@ -3,7 +3,7 @@ import Square from "./square";
 
 export default function TicTacToe({ onSquareClick, squares, status }) {
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <div className="grid grid-rows-3 grid-cols-3 mt-36">
         <Square onClick={() => onSquareClick(0)} value={squares[0]}></Square>
         <Square onClick={() => onSquareClick(1)} value={squares[1]}></Square>
